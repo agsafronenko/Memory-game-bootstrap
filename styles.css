@@ -17,10 +17,11 @@ body {
     margin: 8px auto 0px auto;
 }
 .clicksBar h3 {
-    color: red;
+    color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
     font-size: 32px;
     margin: auto;
+    width: 100%;
 }
 .cardBoard {
     margin: 54px auto auto auto;
