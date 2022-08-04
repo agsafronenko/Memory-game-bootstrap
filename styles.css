@@ -14,7 +14,8 @@ body {
     position: fixed;
     background-color: #AA96DA;
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
+    margin: 8px auto 0px auto;
 }
 .clicksBar h3 {
     color: white;
