@@ -1,49 +1,54 @@
 body {
     background: #C5FAD5;
 }
+
 .board {
     position: fixed;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px ridge #AA96DA;
+    border: 0.4vh ridge #AA96DA;
     border-radius: 2%;
-    padding: 2px;
+    padding: 0.27vh;
 }
+
 .clicksBar {
     position: fixed;
     background-color: #AA96DA;
     box-sizing: border-box;
-    margin: 8px auto 0px auto;
+    margin: 1.1vh auto 0 auto;
     width: 100%;
 }
+
 .clicksBar h3 {
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 32px;
+    font-size: 4.4vh;
     margin: auto;
 }
+
 .cardBoard {
-    margin: 54px auto auto auto;
+    margin: 7.48vh auto auto auto;
     display: grid;
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(5, 100px);
-    grid-gap: 5px;
-    border: 2px solid #AA96DA;
+    grid-template-columns: repeat(5, 13.85vh);
+    grid-template-rows: repeat(5, 13.85vh);
+    grid-gap: 0.7vh;
+    border: 0.27px solid #AA96DA;
     box-sizing: border-box;
     background-color: #AA96DA;
 }
+
 .timer {
-    width: 100px;
-    height: 100px;
+    width: 13.85vh;
+    height: 13.85vh;
     background: #AA96DA;
-    border: 2px solid white;
-    border-radius: 20px;
+    border: 0.27vh solid white;
+    border-radius: 2.77vh;
     box-sizing: border-box;
     grid-area: 3 / 3 / 4 / 4;
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 32px;
+    font-size: 4.4vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -51,8 +56,8 @@ body {
 
 .startGame {
     position: fixed;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
     width: 100%;
@@ -62,22 +67,25 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .startGame p {
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 48px;
+    font-size: 6.65vh;
 }
+
 .startGame p:hover {
     background-color: #C5FAD5;
     cursor: pointer;
     color: #AA96DA;
     border-radius: 7%;
-    padding: 3px 10px;
+    padding: 0.41vh 1.39vh;
 }
+
 .difficulty {
     position: fixed;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 100%;
@@ -87,148 +95,183 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .choose {
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 40px;
+    font-size: 5.54vh;
     text-align: center;
 }
+
 .choice {
-    margin-top: 20px;
+    margin-top: 2.77vh;
     display: flex;
     justify-content: space-evenly;
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 30px;
+    font-size: 4.15vh;
 }
+
 .choice span:hover {
     background-color: #C5FAD5;
 }
 
-.normal:hover:before, .normal:hover:after {
+.normal:hover:before,
+.normal:hover:after {
     content: ' -!- ';
 }
+
 .normal:hover {
-    border-radius: 7px;
-    font-size: 25px;
+    border-radius: 1vh;
+    font-size: 3.46vh;
     cursor: pointer;
-    padding: 5px 8px;
+    padding: 0.7vh 1.1vh;
 }
-.hard:hover:before, .hard:hover:after {
+
+.hard:hover:before,
+.hard:hover:after {
     content: ' -!- ';
 }
+
 .hard:hover {
     color: red;
-    border-radius: 7px;
-    font-size: 25px;
+    border-radius: 1vh;
+    font-size: 3.46vh;
     cursor: pointer;
-    padding: 3px 5px;
+    padding: 0.41vh 0.69vh;
 }
+
 .endGame {
     position: fixed;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
     width: 100%;
     height: 100%;
     background-color: #AA96DA;
     border-radius: 2%;
-    padding: 2px;
+    padding: 0.27vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .endGameText {
     color: white;
     margin: auto;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 20px;
+    font-size: 2.77vh;
 }
+
 #winningImage {
     width: 95%;
     border-radius: 2%;
 }
+
 #gameOver {
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 75px;
+    font-size: 10.38vh;
 }
+
 #tryAgain {
     color: white;
     text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
-    font-size: 50px;
+    font-size: 6.92vh;
 }
+
 #tryAgain:hover {
     background-color: #C5FAD5;
     cursor: pointer;
-    border-radius: 7px;
-    padding: 5px 8px;
+    border-radius: 1vh;
+    padding: 0.7vh 1.1vh;
 }
+
 #stats {
     display: flex;
     flex-direction: column;
 }
+
 /*-- promt text for clicks left: */
 .promt {
     position: relative;
     display: inline-block;
     margin: auto;
-  }
+}
+
 .promttext {
     visibility: hidden;
     width: 200%;
     background-color: #C5FAD5;
     color: gray;
-    font-size: 14px;
+    font-size: 1.9vh;
     text-align: center;
     font-style: italic;
-    padding: 5px 0;
+    padding: 0.7vh 0;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
     top: 105%;
     left: -50%;
-  }
-  .promt:hover .promttext {
+}
+
+.promt:hover .promttext {
     visibility: visible;
-  }
-  .moreinfo {
+}
+
+.moreinfo {
     position: relative;
     display: inline-block;
     margin: auto;
     width: 100%;
-  }
+}
+
 .moreinfotext {
     visibility: hidden;
     width: 120%;
     background-color: #C5FAD5;
     color: gray;
-    font-size: 14px;
+    font-size: 1.93vh;
     font-style: italic;
     padding: 5px;
-    border-radius: 6px;
+    border-radius: 0.83vh;
     position: absolute;
     z-index: 1;
     top: 105%;
     left: -11.5%;
-  }
-  .moreinfo:hover .moreinfotext {
+}
+
+.moreinfo:hover .moreinfotext {
     visibility: visible;
-  }
-  .center {
+}
+
+.center {
     text-align: center;
     font-weight: 800;
-  }
-  .left {
+}
+
+.left {
     text-align: left;
-  }
+}
